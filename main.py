@@ -21,20 +21,21 @@ Bem-vindo, Gabriel!
 
 '''
 user = 'Gabriel'
-password = 1234
-tentativas = 1
+password = '1234'
+tentativas = 0
 
-usuario = input('Digite seu usuario: ')
-senha = int(input('Digite a sua senha: '))
+while tentativas <3:
+    usuario = input('Digite seu usuario: ')
+    senha = int(input('Digite a sua senha: '))
 
-while senha != password and tentativas <3:
-        print('A sua senha esta incorreta! Tente novamente.')
-        
-        senha = input('Digite a sua senha novamente: ')
-        
+    if usuario == password and usuario == user:
+        print('Login realizado com sucesso!')
+        break
+    else:
         tentativas += 1
+        print('Usuario ou senha incorretos!')
 
-if senha == password:
-    print('Seu login foi efetuado com sucesso!')
-else:
-    print('Suas tentativas foram excedidas.')
+        if tentativas <3:
+            print(f'Tentativas restantes: {3 - tentativas}')
+        else:
+            print('Seu acesso foi bloqueado! Tentativas excedidas.')
