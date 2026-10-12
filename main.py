@@ -1,25 +1,4 @@
-'''
-==============================
-      SISTEMA DE ACESSO
-==============================
 
-Usuário: Gabriel
-Senha: ****
-
-❌ Senha incorreta!
-Tentativas restantes: 2
-
-Senha: ****
-
-❌ Senha incorreta!
-Tentativas restantes: 1
-
-Senha: ****
-
-✅ Login realizado com sucesso!
-Bem-vindo, Gabriel!
-
-'''
 user = 'Gabriel'
 password = '1234'
 tentativas = 0
