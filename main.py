@@ -1,4 +1,3 @@
-
 user = 'Gabriel'
 password = '1234'
 tentativas = 0
@@ -7,7 +6,7 @@ while tentativas <3:
     usuario = input('Digite seu usuario: ')
     senha = int(input('Digite a sua senha: '))
 
-    if usuario == password and usuario == user:
+    if usuario == user and senha == password:
         print('Login realizado com sucesso!')
         break
     else:
